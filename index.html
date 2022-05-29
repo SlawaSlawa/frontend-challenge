@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="libs/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="js/index.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -15,10 +16,10 @@
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <button class="navigation__btn active">Все котики</button>
+                        <button class="navigation__btn active" data-category="all">Все котики</button>
                     </li>
                     <li class="navigation__item">
-                        <button class="navigation__btn">Любимые котики</button>
+                        <button class="navigation__btn" data-category="likes">Любимые котики</button>
                     </li>
                 </ul>
             </nav>
@@ -28,66 +29,7 @@
         <div class="container">
             <div class="content">
                 <ul class="content__list">
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon content__item-icon--active"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
-                    <li class="contenet__item">
-                        <img src="images/cat-example.jpg" alt="Котёнок" class="content__item-img">
-                        <div class="content__item-icon"></div>
-                    </li>
+
                 </ul>
             </div>
             <button class="more-btn">... загружаем еще котиков ...</button>
