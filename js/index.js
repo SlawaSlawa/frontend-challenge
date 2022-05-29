@@ -33,7 +33,6 @@ const getLocalStorage = () => {
 }
 
 const addToLocalStorage = (id) => {
-    console.log('add')
     dataArr.forEach(item => {
         if (item.id === id) {
             dataLikesArr.push(item)
@@ -44,7 +43,6 @@ const addToLocalStorage = (id) => {
 }
 
 const deleteToLocalStorage = (id) => {
-    console.log('del')
     dataLikesArr.forEach((item, index) => {
         if (item.id === id) {
             dataLikesArr.splice(index, 1)
@@ -93,7 +91,6 @@ const renderCards = () => {
     contentBlock.textContent = ''
     let flag = true
 
-    console.log('renderCards')
     dataArr.forEach(card => {
         for (let i = 0; i < dataLikesArr.length; i++) {
             if (dataLikesArr[i].id === card.id) {
